@@ -12,6 +12,7 @@ protocol SecondViewControllerDelegate: AnyObject {
     func didEnterText(text: String?)
 }
 
+
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var actionButton: UIButton!
@@ -33,5 +34,4 @@ class SecondViewController: UIViewController {
         //Шаг 4. Прописываем действие для делегата
         delegate?.didEnterText(text: textField.text)
     }
-    
 }
